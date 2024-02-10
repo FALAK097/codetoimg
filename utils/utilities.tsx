@@ -23,6 +23,30 @@ export const languages = [
     name: 'TypeScript',
     icon: 'icons/typescript.svg',
   },
+  {
+    name: 'Sass',
+    icon: 'icons/sass.svg',
+  },
+  {
+    name: 'Ruby',
+    icon: 'icons/ruby.svg',
+  },
+  {
+    name: 'PHP',
+    icon: 'icons/php.svg',
+  },
+  {
+    name: 'Golang',
+    icon: 'icons/golang.svg',
+  },
+  {
+    name: 'MySQL',
+    icon: 'icons/mysql.svg',
+  },
+  {
+    name: 'Markdown',
+    icon: 'icons/markdown.svg',
+  },
 ];
 
 export const getExtension = (language: string) => {
@@ -39,6 +63,18 @@ export const getExtension = (language: string) => {
       return '.java';
     case 'TypeScript':
       return '.ts';
+    case 'Sass':
+      return '.scss';
+    case 'Ruby':
+      return '.rb';
+    case 'PHP':
+      return '.php';
+    case 'Golang':
+      return '.go';
+    case 'MySQL':
+      return '.sql';
+    case 'Markdown':
+      return '.md';
     default:
       return '.js';
   }
